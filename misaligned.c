@@ -23,8 +23,8 @@ void printColorMap(int pairNumber, const char *majorColor, const char *minorColo
 ColorPair getColorInfoFromPairNumber(int pairNumber) {
     ColorPair colorPair;
     colorPair.pairNumber = pairNumber;
-    colorPair.majorColor = MajorColorNames[(pairNumber / numOfMajorColors)];
-    colorPair.minorColor = MinorColorNames[(pairNumber % numOfMinorColors)];
+    colorPair.majColor = majorColor[(pairNumber / numOfMajorColors)];
+    colorPair.minColor = minorColor[(pairNumber % numOfMinorColors)];
     return colorPair;
 }
 
@@ -32,8 +32,8 @@ ColorPair getColorInfoFromPairNumber(int pairNumber) {
 void testPairNumberToColor(int pairNumber, const char* expectedMajorColor, const char* expectedMinorColor){
     ColorPair colorPair = getColorInfoFromPairNumber(pairNumber);
     assert(colorPair.pairNumber == pairNumber);
-    assert(colorPair.majorColor == expectedMajorColor);
-    assert(colorPair.minorColor == expectedMinorColor);
+    assert(colorPair.majColor == expectedMajorColor);
+    assert(colorPair.minColor == expectedMinorColor);
 }
 
 //Print and test the color map information
