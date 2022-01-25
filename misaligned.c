@@ -17,7 +17,7 @@ typedef struct {
 
 //Function to print the color map on console
 void printColorMap(int pairNumber, const char *majorColor, const char *minorColor ) {
-	printf("%d | %s | %s\n", d, s1, s2);
+	printf("%d | %s | %s\n", pairNumber, majorColor, minorColor);
 }
 
 ColorPair getColorInfoFromPairNumber(int pairNumber) {
