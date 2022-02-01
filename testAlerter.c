@@ -20,6 +20,6 @@ int main() {
 	testAlertInCelcius(350.4,1);
 	testAlertInCelcius(412.86,1);
 	testAlertInCelcius(270,2);
-  testAlertInCelcius(299.5,3);
+	testAlertInCelcius(299.5,3);
 	return 0;
 }
