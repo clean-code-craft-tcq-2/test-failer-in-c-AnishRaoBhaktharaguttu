@@ -26,11 +26,11 @@ ColorPair* constructColorCodingMap(ColorPair *colorPair){
 }
 
 //Function to print the color map on console
-void printColorMapOnConsole(ColorPair *colorPair) {
+void printColorMapOnConsole(ColorPair *colorPairExt) {
      int pairNumCount;
      printf(" | Pair Number | Major Color | Minor Color | \n");
      for (pairNumCount=0; pairNumCount<totalColorPairs; pairNumCount++){
-         printf("    %d          %s          %s     \n", colorPair[pairNumCount].pairNumber, colorPair[pairNumCount].majColor, colorPair[pairNumCount].minColor);
+         printf("    %d          %s          %s     \n", colorPairExt[pairNumCount].pairNumber, colorPairExt[pairNumCount].majColor, colorPairExt[pairNumCount].minColor);
     }
 }
 
