@@ -4,6 +4,8 @@
 const char* majorColor[] = {"White", "Red", "Black", "Yellow", "Violet"};
 const char* minorColor[] = {"Blue", "Orange", "Green", "Brown", "Slate"};
 
+ColorPair* colorPairExt;
+
 //Finding the number of minor, major and total number of colors
 int numOfMajorColors = sizeof(majorColor) / sizeof(majorColor[0]);
 int numOfMinorColors = sizeof(minorColor) / sizeof(minorColor[0]);
@@ -36,5 +38,6 @@ void printColorMapOnConsole(ColorPair *colorPair) {
 
 void printColorMap(void (*funPtr_printColorMapOnConsole)(ColorPair*)){
 	ColorPair colorPair[totalColorPairs];
-	(*funPtr_printColorMapOnConsole)(constructColorCodingMap(colorPair));
+	colorPairExt = constructColorCodingMap(colorPair);
+	(*funPtr_printColorMapOnConsole)(colorPairExt);
 }
