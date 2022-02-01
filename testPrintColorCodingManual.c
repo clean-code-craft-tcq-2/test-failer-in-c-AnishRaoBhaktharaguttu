@@ -1,7 +1,7 @@
 #include <assert.h>
 #include "printColorCodingManual.h"
 
-extern ColorPair* colorPair;
+extern ColorPair* colorPairExt;
 
 void testPrintColorMap(int expectedPairNumber, char expectedMajorColor[], char expectedMinorColor[]) {
 	assert(colorPair[expectedPairNumber-1].pairNumber == expectedPairNumber);
