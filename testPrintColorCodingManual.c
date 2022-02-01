@@ -4,13 +4,13 @@
 extern ColorPair* colorPair;
 
 void testPrintColorMap(int expectedPairNumber, char expectedMajorColor[], char expectedMinorColor[]) {
-	assert(colorPair[expectedPairNumber-1].PairNumber == expectedPairNumber);
-	assert(colorPair[expectedPairNumber-1].MajorColor == expectedMajorColor);
-	assert(colorPair[expectedPairNumber-1].MinorColor == expectedMinorColor);
+	assert(colorPair[expectedPairNumber-1].pairNumber == expectedPairNumber);
+	assert(colorPair[expectedPairNumber-1].majColor == expectedMajorColor);
+	assert(colorPair[expectedPairNumber-1].minColor == expectedMinorColor);
 }
 
 int main() {
-	printColorMap(&printColorMaponConsole);
-	testPrintColorMap(19, "Black, "Slate");
+	printColorMap(&printColorMapOnConsole);
+	testPrintColorMap(19, "Black", "Slate");
 	return 0;
 }
