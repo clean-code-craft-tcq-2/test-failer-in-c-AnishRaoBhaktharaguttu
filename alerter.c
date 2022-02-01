@@ -15,7 +15,7 @@ void checkNetworkFailure(int returnCode) {
 }
 
 void alertInCelcius(float farenheit, int (*funPtr_NetworkAlert) (float)) {
-	float celcius = farenheitToCelciusConvertor(farenheit);
+	float celcius = convertFarenheitToCelcius(farenheit);
     // Passing network check stub as function pointer 
 	int returnCode = (*funPtr_NetworkAlert)(celcius);
 	checkNetworkFailure(returnCode);
