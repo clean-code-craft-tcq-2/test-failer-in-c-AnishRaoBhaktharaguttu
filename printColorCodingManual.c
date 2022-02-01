@@ -15,8 +15,8 @@ ColorPair* constructColorCodingMap(ColorPair *colorPair){
 	for (majColPtr=0; majColPtr<numOfMajorColors; majColPtr++){
 		for (minColPtr=0; minColPtr<numOfMinorColors; minColPtr++){
 			colorPair[pairNumCount].pairNumber = (majColPtr * numOfMinorColors) + (minColPtr+1) ;	
-			colorPair[pairNumCount].majColor = majorColor[majColPtr]);
-			colorPair[pairNumCount].minColor = minorColor[minColPtr]);
+			colorPair[pairNumCount].majColor = majorColor[majColPtr];
+			colorPair[pairNumCount].minColor = minorColor[minColPtr];
 			pairNumCount++;
 		}
 	}
