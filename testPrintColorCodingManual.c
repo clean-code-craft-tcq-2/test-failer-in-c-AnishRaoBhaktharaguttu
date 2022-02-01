@@ -11,8 +11,8 @@ void testPrintColorMap(int expectedPairNumber, char expectedMajorColor[], char e
 
 int main() {
 	printColorMap(&printColorMapOnConsole);
-        char testMajorColor[] = "Black";
-	char testMinorColor[] = "Slate";
+        char testMajorColor[10] = "Black";
+	char testMinorColor[10] = "Slate";
 	testPrintColorMap(15, testMajorColor, testMinorColor);
 	
 	testMajorColor = "Violet";
