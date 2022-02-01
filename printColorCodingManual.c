@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <assert.h>
+#include "printColorCodingManual.h"
 
 const char* majorColor[] = {"White", "Red", "Black", "Yellow", "Violet"};
 const char* minorColor[] = {"Blue", "Orange", "Green", "Brown", "Slate"};
@@ -8,13 +8,6 @@ const char* minorColor[] = {"Blue", "Orange", "Green", "Brown", "Slate"};
 int numOfMajorColors = sizeof(majorColor) / sizeof(majorColor[0]);
 int numOfMinorColors = sizeof(minorColor) / sizeof(minorColor[0]);
 int totalColorPairs = numOfMajorColors * numOfMinorColors;
-
-//Define Color Pair structure
-typedef struct {
-    int pairNumber;
-    const char* majColor;
-    const char* minColor;
-} ColorPair;
 
 //This function constructs the Color Pair structure with the color coding details 
 ColorPair* constructColorCodingMap(ColorPair *colorPair){
