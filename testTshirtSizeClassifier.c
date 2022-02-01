@@ -9,9 +9,10 @@ void testTshirtSizeBasedOnShoulderMeasurement(int measure_cms, char expectedSize
 }
 
 int main() {
-	testTshirtSizeBasedOnShoulderMeasurement(30,'S');
-	testTshirtSizeBasedOnShoulderMeasurement(40,'M');
-	testTshirtSizeBasedOnShoulderMeasurement(42,'L');
-	testTshirtSizeBasedOnShoulderMeasurement(55,'\0');
+	testTshirtSizeBasedOnShoulderMeasurement(32,'\0');
+	testTshirtSizeBasedOnShoulderMeasurement(37,'s');
+	testTshirtSizeBasedOnShoulderMeasurement(41,'M');
+	testTshirtSizeBasedOnShoulderMeasurement(46,'L');
+        testTshirtSizeBasedOnShoulderMeasurement(50,'\0');
 	return 0;
 }
