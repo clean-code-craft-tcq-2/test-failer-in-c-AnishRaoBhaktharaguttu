@@ -11,12 +11,12 @@ void testPrintColorMap(int expectedPairNumber, char expectedMajorColor[], char e
 
 int main() {
 	printColorMap(&printColorMapOnConsole);
-        char testMajorColor[10] = "Black";
-	char testMinorColor[10] = "Slate";
-	testPrintColorMap(15, testMajorColor, testMinorColor);
+        char testMajorColor1[] = "Black";
+	char testMinorColor1[] = "Slate";
+	testPrintColorMap(15, testMajorColor1, testMinorColor1);
 	
-	testMajorColor = "Violet";
-	testMinorColor = "Orange";
-	testPrintColorMap(22, testMajorColor, testMinorColor);
+	char testMajorColor2[] = "Violet";
+	char testMinorColor2[] = "Orange";
+	testPrintColorMap(22, testMajorColor2, testMinorColor2);
 	return 0;
 }
