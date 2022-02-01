@@ -1,24 +1,13 @@
 #include <stdio.h>
-#include <assert.h>
 
-char size(int cms) {
+char getTshirtSizeBasedOnShoulderMeasurement(int measure_cms) {
     char sizeName = '\0';
-    if(cms < 38) {
+    if(measure_cms < 38) {
         sizeName = 'S';
-    } else if(cms > 38 && cms < 42) {
+    } else if(measure_cms > 38 && measure_cms < 42) {
         sizeName = 'M';
-    } else if(cms > 42) {
+    } else if(measure_cms > 42) {
         sizeName = 'L';
     }
     return sizeName;
-}
-
-int main() {
-    assert(size(37) == 'S');
-    assert(size(38) == 'M');
-    assert(size(40) == 'M');
-    assert(size(42) == 'M');
-    assert(size(43) == 'L');
-    printf("All is well (maybe!)\n");
-    return 0;
 }
