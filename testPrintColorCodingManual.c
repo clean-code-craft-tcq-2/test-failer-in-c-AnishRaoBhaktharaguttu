@@ -15,8 +15,8 @@ int main() {
 	char testMinorColor[] = "Slate";
 	testPrintColorMap(15, testMajorColor, testMinorColor);
 	
-	testMajorColor[] = "Violet";
-	testMinorColor[] = "Orange";
+	testMajorColor = "Violet";
+	testMinorColor = "Orange";
 	testPrintColorMap(22, testMajorColor, testMinorColor);
 	return 0;
 }
