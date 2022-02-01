@@ -5,7 +5,7 @@
 
 //Test and assert if the size classifier is working fine
 void testTshirtSizeBasedOnShoulderMeasurement(int measure_cms, char expectedSize) {
-	assert(tshirtSizeBasedOnShoulderLength(measure_cms) == expectedSize);
+	assert(getTshirtSizeBasedOnShoulderMeasurement(measure_cms) == expectedSize);
 }
 
 int main() {
