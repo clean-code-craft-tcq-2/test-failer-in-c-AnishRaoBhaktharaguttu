@@ -14,9 +14,9 @@ ColorPair* constructColorCodingMap(ColorPair *colorPair){
 	int minColPtr, majColPtr, pairNumCount=0;
 	for (majColPtr=0; majColPtr<numOfMajorColors; majColPtr++){
 		for (minColPtr=0; minColPtr<numOfMinorColors; minColPtr++){
-			colorPair[pairNumCount].PairNumber = (majColPtr * numOfMinorColors) + (minColPtr+1) ;	
-			colorPair[pairNumCount].MajorColor = majorColor[majColPtr]);
-			colorPair[pairNumCount].MinorColor = minorColor[minColPtr]);
+			colorPair[pairNumCount].pairNumber = (majColPtr * numOfMinorColors) + (minColPtr+1) ;	
+			colorPair[pairNumCount].majColor = majorColor[majColPtr]);
+			colorPair[pairNumCount].minColor = minorColor[minColPtr]);
 			pairNumCount++;
 		}
 	}
@@ -28,7 +28,7 @@ void printColorMapOnConsole(ColorPair *colorPair) {
      int pairNumCount;
      printf(" | Pair Number | Major Color | Minor Color | \n");
      for (pairNumCount=0; pairNumCount<totalColorPairs; pairNumCount++){
-         printf("    %d          %s          %s     \n", colorPair[pairNumCount].PairNumber, colorPair[pairNumCount].MajorColor, colorPair[pairNumCount].MinorColor);
+         printf("    %d          %s          %s     \n", colorPair[pairNumCount].pairNumber, colorPair[pairNumCount].majColor, colorPair[pairNumCount].minColor);
     }
 }
 
